@@ -1,10 +1,31 @@
 import React from 'react';
+import { Switch, Route, Link } from 'react-router-dom';
+
 import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 
+const HatsPage = () => (
+  <div>
+    <h1>HATS PAGE </h1>
+  </div>
+)
+
+const newPage = props => (
+  <div>
+    <button onClick={() => props.history.push('/')}> Home</button>
+    <h1>Home Page </h1>
+  </div>
+)
+
 function App() {
   return (
-    <HomePage/>
+    <div>
+      <Switch>     
+        <Route exact path='/' component={HomePage}/>
+        <Route path='/' component={newPage}/>
+        <Route path='/hats' component={HatsPage}/>
+      </Switch>
+    </div>
   )
 }
 
