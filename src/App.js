@@ -5,6 +5,7 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
+import SignInComponent from './components/sign-up/sign-up.component'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <Switch>    
         <Route exact path='/' component={HomePage}/>
-        <Route path='/shop/hats' component={HomePage}/>
+        <Route path='/signin' component={SignInComponent}/>
         <Route path='/shop' component={ShopPage}/>        
       </Switch>
     </div>
