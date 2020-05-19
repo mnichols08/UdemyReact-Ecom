@@ -1,34 +1,13 @@
-html {
-    font-size: 62.5%;
-}
-
-h1 {
-    font-size: 2.6rem;
-}
-
-h2 {
-    font-size: 2.2rem;
-}
-
-h3 {
-    font-size: 1.9rem;
-}
-
-h4 {
-    font-size: 1.6rem;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Open Sans Condensed';
-    padding: 2rem 6rem;
+  font-family: 'Open Sans Condensed';
+  padding: 20px 40px;
 }
 
 a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
 }
